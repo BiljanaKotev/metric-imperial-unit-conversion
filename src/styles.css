@@ -21,6 +21,20 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #5a537b;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #353535;
+}
+
 #input-unit {
   font-size: 58px;
   font-weight: 800;
@@ -45,6 +59,7 @@ button {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 section.measurements {
@@ -56,13 +71,14 @@ section.measurements {
 .content-container {
   background-color: #ffffff;
   color: #5a537b;
-  width: 95%;
-  margin: 20px auto;
+  width: 90%;
   border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 23px;
   display: inline-block;
+}
 
-  top: 20px;
+.content-container:first-child {
+  margin-top: 36px;
 }
