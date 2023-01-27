@@ -1,11 +1,11 @@
 "use strict";
 
-const meterToFeet = (3.281).toFixed(2);
-const feetToMeter = (0.3048).toFixed(2);
-const literToGallon = (0.264).toFixed(2);
-const gallonToLiter = (3.785).toFixed(2);
-const kiloToPound = (2.205).toFixed(2);
-const poundToKilo = (0.454).toFixed(2);
+const meterToFeet = 3.281;
+const feetToMeter = 0.3048;
+const literToGallon = 0.264;
+const gallonToLiter = 3.785;
+const kiloToPound = 2.205;
+const poundToKilo = 0.454;
 
 let inputUnit = document.querySelector("#input-unit");
 const convertBtn = document.querySelector("#convert-btn");
@@ -17,14 +17,20 @@ convertBtn.addEventListener("click", function () {
   let inputValue = inputUnit.value;
 
   lengthMeasurement.innerHTML = `${inputValue} meters = ${
-    inputValue * meterToFeet
-  } feet | ${inputValue} feet = ${inputValue * feetToMeter} meters`;
+    inputValue * meterToFeet.toFixed(3)
+  } feet | ${inputValue} feet = ${inputValue * feetToMeter.toFixed(4)} meters`;
 
   volumeMeasurement.innerHTML = `${inputValue} liters = ${
-    inputValue * literToGallon
-  } gallons | ${inputValue} gallons = ${inputValue * gallonToLiter} liters`;
+    inputValue * literToGallon.toFixed(3)
+  } gallons | ${inputValue} gallons = ${
+    inputValue * gallonToLiter.toFixed(3)
+  } liters`;
 
   massMeasurement.innerHTML = `${inputValue} kilos = ${
-    inputValue * kiloToPound
-  } pounds | ${inputValue} pounds = ${inputValue * poundToKilo} kilos`;
+    inputValue * kiloToPound.toFixed(3)
+  } pounds | ${inputValue} pounds = ${
+    inputValue * poundToKilo.toFixed(3)
+  } kilos`;
 });
+
+console.log(typeof feetToMeter);
