@@ -5,13 +5,12 @@ body {
   margin: 0 auto;
 }
 
-.top-container {
-  margin-top: 0px;
+section.hero {
   padding-top: 33px;
   background-color: #6943ff;
   color: #ffffff;
   max-width: 550px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 h1 {
@@ -22,7 +21,7 @@ h1 {
   text-align: center;
 }
 
-#unit {
+#input-unit {
   font-size: 58px;
   font-weight: 800;
   border-radius: 5px;
@@ -48,10 +47,10 @@ button {
   cursor: pointer;
 }
 
-.bottom-container {
+section.measurements {
   background-color: #f4f4f4;
   max-width: 550px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 
 .content-container {
