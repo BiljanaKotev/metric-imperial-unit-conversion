@@ -5,9 +5,6 @@ body {
   margin: 0 auto;
 }
 
-header {
-}
-
 .top-container {
   margin-top: 0px;
   padding-top: 33px;
@@ -25,7 +22,7 @@ h1 {
   text-align: center;
 }
 
-header #unit {
+#unit {
   font-size: 58px;
   font-weight: 800;
   border-radius: 5px;
