@@ -32,5 +32,3 @@ convertBtn.addEventListener("click", function () {
     inputValue * poundToKilo.toFixed(3)
   } kilos`;
 });
-
-console.log(typeof feetToMeter);
