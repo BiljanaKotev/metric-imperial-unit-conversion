@@ -13,7 +13,9 @@ const lengthMeasurement = document.querySelector("#length-measurement");
 const volumeMeasurement = document.querySelector("#volume-measurement");
 const massMeasurement = document.querySelector("#mass-measurement");
 
-convertBtn.addEventListener("click", function () {
+convertBtn.addEventListener("click", valueConversion);
+
+function valueConversion() {
   let inputValue = inputUnit.value;
   const meterToFeetConversion = inputValue * meterToFeet;
   const feetToMeterConversion = inputValue * feetToMeter;
@@ -27,5 +29,6 @@ convertBtn.addEventListener("click", function () {
   volumeMeasurement.innerHTML = `${inputValue} liters = ${literToGallonConversion.toFixed(3)} gallons | ${inputValue} gallons = ${gallonToLiterConversion.toFixed(3)} liters`;
 
   massMeasurement.innerHTML = `${inputValue} kilos = ${kiloToPoundConversion.toFixed(3)} pounds | ${inputValue} pounds = ${poundToKiloConversion.toFixed(3)} kilos`;
-});
+}
 
+valueConversion();
