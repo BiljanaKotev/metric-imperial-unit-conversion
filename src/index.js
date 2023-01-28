@@ -22,17 +22,10 @@ convertBtn.addEventListener("click", function () {
   const kiloToPoundConversion = inputValue * kiloToPound;
   const poundToKiloConversion = inputValue * poundToKilo;
 
-  lengthMeasurement.innerHTML = `${inputValue} meters = ${meterToFeetConversion.toFixed(
-    2
-  )} feet | ${inputValue} feet = ${feetToMeterConversion.toFixed(2)}`;
+  lengthMeasurement.innerHTML = `${inputValue} meters = ${meterToFeetConversion.toFixed(3)} feet | ${inputValue} feet = ${feetToMeterConversion.toFixed(3)} meters`;
 
-  volumeMeasurement.innerHTML = `${inputValue} liters = ${literToGallonConversion.toFixed(
-    2
-  )} gallons | ${inputValue} gallons = ${gallonToLiterConversion.toFixed(
-    2
-  )} liters`;
+  volumeMeasurement.innerHTML = `${inputValue} liters = ${literToGallonConversion.toFixed(3)} gallons | ${inputValue} gallons = ${gallonToLiterConversion.toFixed(3)} liters`;
 
-  massMeasurement.innerHTML = `${inputValue} kilos = ${kiloToPoundConversion.toFixed(
-    2
-  )} pounds | ${inputValue} pounds = ${poundToKiloConversion.toFixed(2)} kilos`;
+  massMeasurement.innerHTML = `${inputValue} kilos = ${kiloToPoundConversion.toFixed(3)} pounds | ${inputValue} pounds = ${poundToKiloConversion.toFixed(3)} kilos`;
 });
+
