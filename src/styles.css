@@ -97,3 +97,12 @@ section.measurements {
 .content-container:first-child {
   margin-top: 36px;
 }
+
+footer {
+  color: #b295ff;
+  margin-bottom: 25px;
+}
+
+footer a {
+  color: #ffffff;
+}
