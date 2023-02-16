@@ -17,6 +17,7 @@ convertBtn.addEventListener("click", valueConversion);
 
 function valueConversion() {
   let inputValue = inputUnit.value;
+  // had to do the conversion first for the toFixed to work properly. The toFixed method should be applied when the number has already been converted.
   const meterToFeetConversion = inputValue * meterToFeet;
   const feetToMeterConversion = inputValue * feetToMeter;
   const literToGallonConversion = inputValue * literToGallon;
@@ -32,3 +33,4 @@ function valueConversion() {
 }
 
 valueConversion();
+
